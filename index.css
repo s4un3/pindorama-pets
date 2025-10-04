@@ -1,0 +1,37 @@
+body{
+    margin:0px;
+    padding:0px;
+
+    background-color: #E2F5FA;
+    font-family: sans-serif;
+    color: #063643;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+#divRespiro {
+    height: 33px;
+}
+
+#divHeader {
+    background-color: #F8F8FF;
+    height: 80px;
+}
+
+#divFooter {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: auto;
+}
+
+#divFooterPindorama{
+    background-color: white;
+    height: 100px
+}
+
+#divFooterUnect {
+    background-color: #063643;
+    height: 80px
+}
