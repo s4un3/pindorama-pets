@@ -19,9 +19,13 @@ body{
     height: 80px;
 }
 
-#divFooter {
+#bannerCentral{
+    margin: 10%;
+}
+
+footer {
     position:absolute;
-    bottom:0;
+    bottom: 0%;
     width: 100%;
     height: auto;
 }
@@ -33,5 +37,8 @@ body{
 
 #divFooterUnect {
     background-color: #063643;
-    height: 80px
+    height: 80px;
+    font-size: 12px;
+    color: #E2F5FA;
+    align-content: center;
 }
