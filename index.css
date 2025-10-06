@@ -17,6 +17,19 @@ body{
 #divHeader {
     background-color: #F8F8FF;
     height: 80px;
+    display: flex;
+}
+
+#btnMenu{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#logo{
+    margin: auto;
+    height: 100%;
+    width: auto;
 }
 
 #bannerCentral{
