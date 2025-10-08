@@ -28,6 +28,15 @@ body{
     height: 40px;
 }
 
+#scrollPrincipal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colunaEspacamento{
+    width: 10px;
+}
+
 #logo{
     position: relative;
     height: 100%;
