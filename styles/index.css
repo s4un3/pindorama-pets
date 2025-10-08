@@ -42,7 +42,7 @@ body{
 }
 
 .colunaEspacamento{
-    width: 10px;
+    width: 1px;
 }
 
 #logo{
@@ -54,21 +54,22 @@ body{
 #bannerCentral{
     position: relative;
     align-self: center;
-    margin: 100px;
+    margin: 10px;
     height: 500px;
-    width: 400px;
+    width: 303px;
 }
 
 #pslogan{
     text-align: justify;
     font-size: 24px;
-    width: 218px;
+    width: 220px;
 }
 
 #imgpets {
     position: absolute;
-    top: 40px;
-    width: 400px;
+    top: 50px;
+    left: 35px;
+    width: 303px;
     height: auto;
 }
 
