@@ -17,11 +17,8 @@ body{
     font-weight: 400;;
 }
 
-#divRespiro {
-    height: 33px;
-}
-
 #divHeader {
+    margin-top: 40px;
     background-color: #F8F8FF;
     height: 80px;
     display: flex;
