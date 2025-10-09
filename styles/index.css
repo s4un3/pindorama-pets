@@ -89,8 +89,16 @@ footer{
     background-color: white;
     height: auto;
     display: flex;
-    justify-content: space-between;
-    padding: 29px
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#footerServicos{
+    margin: 0 20px;
+}
+
+#footerInstitucional{
+    margin: 0 20px;
 }
 
 #divFooterUnect {
