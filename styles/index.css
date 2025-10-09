@@ -3,7 +3,7 @@ body{
     padding:0px;
 
     background-color: #E2F5FA;
-    font-family: sans-serif;
+    font-family: Inter;
     color: #063643;
     font-weight: 700;
     font-size: 24px;
@@ -11,6 +11,7 @@ body{
 
 .txtSubtitle {
     font-size: 12px;
+    font-style: bold;
 }
 .txtLight {
     font-size: 12px;
@@ -70,6 +71,10 @@ body{
     height: auto;
 }
 
+footer{
+    font-family: Poppins;
+}
+
 #divFooterPindorama{
     background-color: white;
     height: auto;
@@ -85,4 +90,5 @@ body{
     color: #E2F5FA;
     align-content: center;
     text-align: center;
+    font-style: bold;
 }
