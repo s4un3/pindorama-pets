@@ -29,6 +29,20 @@ body{
 
 }
 
+.btnPadrao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color:#0F637A;
+    color: #F8F8FF;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 4.44px;
+}
+
 .btnMenu{
     width: 40px;
     height: 40px;
@@ -43,6 +57,12 @@ body{
     width: 1px;
 }
 
+#colunaPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #logo{
     position: relative;
     height: auto;
@@ -52,9 +72,13 @@ body{
 #bannerCentral{
     position: relative;
     align-self: center;
-    margin: 10px;
     height: 200px;
     width: 303px;
+}
+
+#btnContato{
+    width: 170px;
+    height: 40px;
 }
 
 #elipse1{
@@ -86,6 +110,7 @@ footer{
 }
 
 #divFooterPindorama{
+    margin-top: 50px;
     background-color: white;
     height: auto;
     display: flex;
