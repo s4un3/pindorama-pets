@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-    </head>
+
+<head>
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
     <header>
-        <div id="divRespiro"></div>
         <div id="divHeader">
-            <button class="btnMenu" id="btnMenu">Texto placeholder</button>
-            <img id="logo" src="logo.png">
+            <div class="btnMenu" id="btnMenu">
+                <img src="assets/menu.svg">
+            </div>
+            <img id="logo" src="assets/logo.svg">
             <div class="btnMenu"></div> <!-- Para ficar do mesmo tamanho do botão -->
         </div>
     </header>
-    <body>
-        <div id="bannerCentral">
-            <p style="text-align: justify;">Cuidamos do seu animal com muito amor</p>
-            <img src="img.png" width="80%" height="auto">
+    <div id="scrollPrincipal">
+        <div class="colunaEspacamento"></div>
+        <div id="colunaPrincipal">
+            <div id="bannerCentral">
+                <img id="elipse1" src="assets/elipse.svg">
+                <p id="pslogan">Cuidamos do seu animal com muito amor</p>
+                <img id="imgpets" src="assets/img.png">
+            </div>
+            <div class="btnPadrao" id="btnContato">Entre em contato</div>
         </div>
-    </body>
+        <div class="colunaEspacamento"></div>
+    </div>
     <footer>
-        <div id="divFooterPindorama"></div>
+        <div id="divFooterPindorama">
+            <div id="footerServicos">
+                <p class="txtSubtitle">NOSSOS SERVIÇOS</p>
+                <p class="txtLight">SOBRE NÓS</p>
+                <p class="txtLight">CONSULTA VETERINÁRIA</p>
+                <p class="txtLight">NOSSOS SERVIÇOS</p>
+
+            </div>
+            <div id="footerInstitucional">
+                <p class="txtSubtitle">INSTITUCIONAL</p>
+                <p class="txtLight">PROGRAMA DE ADOÇÃO</p>
+                <p class="txtLight">TERMOS DE COMPROMISSO</p>
+                <p class="txtLight">UNECT JR</p>
+            </div>
+        </div>
         <div id="divFooterUnect">UNECT JR - TODOS OS DIREITOS RESERVADOS</div>
     </footer>
-    <script src="scipt.js" defer></script>
+</body>
+<script src="scipt.js" defer></script>
+
 </html>

@@ -1,0 +1,161 @@
+:root{
+    --azul-escuro-1: #063643;
+    --azul-escuro-2: #0F637A;
+    --quase-branco-1: #F8F8FF;
+    --azul-claro-1: #E2F5FA;
+    --azul-claro-2: #7ccbe0;
+}
+
+img {
+    cursor: default;
+}
+
+p{
+    cursor: default;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+
+    background-color: var(--azul-claro-1);
+    font-family: Inter;
+    color: var(--azul-escuro-1);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.txtSubtitle {
+    font-size: 12px;
+    font-style: bold;
+}
+.txtLight {
+    font-size: 12px;
+    font-weight: 400;;
+}
+
+#divHeader {
+    margin-top: 40px;
+    background-color: var(--quase-branco-1);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+
+}
+
+.btnPadrao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color: var(--azul-escuro-2);
+    color: var(--quase-branco-1);
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 4.44px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.btnPadrao:hover{
+    transform: scale(1.1);
+    background-color: var(--azul-claro-2);
+    color: var(--azul-escuro-1);
+}
+
+.btnMenu{
+    width: 40px;
+    height: 40px;
+}
+
+#scrollPrincipal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colunaEspacamento{
+    width: 1px;
+}
+
+#colunaPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+#bannerCentral{
+    position: relative;
+    align-self: center;
+    height: 200px;
+    width: 303px;
+}
+
+#btnContato{
+    width: 170px;
+    height: 40px;
+}
+
+#elipse1{
+    position: absolute;
+    top: -90px;
+    left: -20px;
+    width: 350px;
+    height: 300px;
+    z-index: -1;
+}
+
+#pslogan{
+    position: absolute;
+    text-align: justify;
+    font-size: 24px;
+    width: 220px;
+}
+
+#imgpets {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    width: 303px;
+    height: auto;
+}
+
+footer{
+    font-family: Poppins;
+}
+
+#divFooterPindorama{
+    margin-top: 50px;
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#footerServicos{
+    margin: 0 20px;
+}
+
+#footerInstitucional{
+    margin: 0 20px;
+}
+
+#divFooterUnect {
+    background-color: var(--azul-escuro-1);
+    height: 80px;
+    font-size: 12px;
+    color: var(--azul-claro-1);
+    align-content: center;
+    text-align: center;
+    font-style: bold;
+}
