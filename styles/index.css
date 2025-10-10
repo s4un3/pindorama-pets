@@ -41,6 +41,14 @@ body{
     font-size: 15px;
     font-family: Poppins;
     border-radius: 4.44px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.btnPadrao:hover{
+    transform: scale(1.1);
+    background-color: #7ccbe0;
+    color: #063643;
 }
 
 .btnMenu{
