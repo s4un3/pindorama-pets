@@ -31,7 +31,12 @@ body{
 }
 .txtLight {
     font-size: 12px;
-    font-weight: 400;;
+    font-weight: 400;
+}
+.txtSection{
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: bold;
 }
 
 #divHeader {
