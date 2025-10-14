@@ -43,12 +43,14 @@ body {
     font-size: 24px;
     font-family: Poppins;
     font-style: bold;
+    cursor: default;
 }
 
 .txtSection-2 {
     font-size: 28px;
     font-family: Poppins;
     font-style: bold;
+    cursor: default;
 }
 
 #divHeader {
@@ -145,6 +147,10 @@ body {
     left: 35px;
     width: 303px;
     height: auto;
+}
+
+#tituloAvaliacoes{
+    margin-top: 15px;
 }
 
 .imgAvaliador{
@@ -257,11 +263,13 @@ footer {
 .txtSmall {
     font-weight: 400;
     font-size: 0.875rem;
+    cursor: default;
 }
 
 .txtMedium {
     font-weight: 700;
     font-size: 1rem;
+    cursor: default;
 }
 
 #servicos {
@@ -293,7 +301,7 @@ footer {
     justify-content: space-around;
     position: relative;
     background-color: var(--quase-branco-1);
-    color: var(--azul-1100);
+    color: var(--azul-escuro-1);
     align-self: center;
     text-align: center;
     font-size: 15px;
@@ -301,6 +309,12 @@ footer {
     border-radius: 4.44px;
     cursor: pointer;
     transition-duration: 0.25s;
+}
+
+.btnAgendar:hover{
+    background-color: var(--azul-escuro-1);
+    color: var(--quase-branco-1);
+    transform: scale(1.1);
 }
 
 .gato-bg {
