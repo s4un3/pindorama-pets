@@ -5,7 +5,8 @@
     --azul-claro-1: #E2F5FA;
     --azul-claro-2: #7ccbe0;
     --azul-400: #89C5D5;
-    --azul-600: #63B3C9
+    --azul-600: #63B3C9;
+    --azul-1100: #063643;
 }
 
 img {
@@ -14,6 +15,7 @@ img {
 
 p {
     cursor: default;
+    margin: 0;
 }
 
 body {
@@ -38,7 +40,13 @@ body {
 }
 
 .txtSection {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: Poppins;
+    font-style: bold;
+}
+
+.txtSection-2 {
+    font-size: 28px;
     font-family: Poppins;
     font-style: bold;
 }
@@ -190,13 +198,12 @@ footer {
     }
 
     p {
-        margin: 0;
         width: 22rem;
         padding-bottom: 1.25rem;
     }
 }
 
-.paddingQuemSomos {
+.paddingtitulo {
     padding: 1.875rem 0rem 1.25rem 0rem;
 }
 
@@ -208,4 +215,51 @@ footer {
 .txtMedium {
     font-weight: 700;
     font-size: 1rem;
+}
+
+#servicos {
+    width: 24rem;
+    height: 20.625rem;
+    background-color: var(--azul-600);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    p {
+        padding: 1.25rem 0rem 1.375rem 0rem;
+        width: 22rem;
+    }
+}
+
+.tamCaixa {
+    width: 21rem;
+}
+
+.btnAgendar {
+    width: 13rem;
+    height: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color: var(--quase-branco-1);
+    color: var(--azul-1100);
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 4.44px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.gato-bg {
+    position: absolute;
+    bottom: 0;
+    right: 3.25rem;
+    pointer-events: none;
+    width: 7.5rem;
 }
