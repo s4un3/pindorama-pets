@@ -134,6 +134,53 @@ body{
     height: auto;
 }
 
+.imgAvaliador{
+    width: 52px;
+    height: 52px;
+    margin: 0px 20px;
+}
+
+.avaliacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+    width: 353px;
+}
+
+.nomeAvaliador {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+.txtAvaliacao {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+#botoesAvaliacao{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.btnAvaliacao{
+    width: 40px;
+    cursor: pointer;
+}
+
+#btnAnteriorAval{
+    transform: scale(-1);
+}
+
+#numeroAval{
+    font-family: Poppins;
+}
+
 footer{
     font-family: Poppins;
 }
