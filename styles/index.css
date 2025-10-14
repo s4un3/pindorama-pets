@@ -167,6 +167,10 @@ body {
     width: 353px;
 }
 
+.innerAvaliacao{
+    height: 80px;
+}
+
 .nomeAvaliador {
     font-size: 13px;
     font-weight: 400;
