@@ -1,22 +1,26 @@
-:root{
+:root {
     --azul-escuro-1: #063643;
     --azul-escuro-2: #0F637A;
     --quase-branco-1: #F8F8FF;
     --azul-claro-1: #E2F5FA;
     --azul-claro-2: #7ccbe0;
+    --azul-400: #89C5D5;
+    --azul-600: #63B3C9;
+    --azul-1100: #063643;
 }
 
 img {
     cursor: default;
 }
 
-p{
+p {
     cursor: default;
+    margin: 0;
 }
 
-body{
-    margin:0px;
-    padding:0px;
+body {
+    margin: 0px;
+    padding: 0px;
 
     background-color: var(--azul-claro-1);
     font-family: Inter;
@@ -29,12 +33,20 @@ body{
     font-size: 12px;
     font-style: bold;
 }
+
 .txtLight {
     font-size: 12px;
     font-weight: 400;
 }
-.txtSection{
-    font-size: 20px;
+
+.txtSection {
+    font-size: 24px;
+    font-family: Poppins;
+    font-style: bold;
+}
+
+.txtSection-2 {
+    font-size: 28px;
     font-family: Poppins;
     font-style: bold;
 }
@@ -50,7 +62,7 @@ body{
 
 }
 
-.btnPadrao{
+.btnPadrao {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,51 +78,52 @@ body{
     transition-duration: 0.25s;
 }
 
-.btnPadrao:hover{
+.btnPadrao:hover {
     transform: scale(1.1);
     background-color: var(--azul-claro-2);
     color: var(--azul-escuro-1);
 }
 
-.btnMenu{
+.btnMenu {
     width: 40px;
     height: 40px;
 }
 
-#scrollPrincipal{
+#scrollPrincipal {
     display: flex;
     justify-content: space-between;
 }
 
-.colunaEspacamento{
+.colunaEspacamento {
     width: 1px;
 }
 
-#colunaPrincipal{
+#colunaPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#logo{
+#logo {
     position: relative;
     height: auto;
     width: auto;
 }
 
-#bannerCentral{
+#bannerCentral {
     position: relative;
     align-self: center;
     height: 200px;
     width: 303px;
 }
 
-#btnContato{
+#btnContato {
     width: 170px;
     height: 40px;
+    margin-bottom: 1.125rem;
 }
 
-#elipse1{
+#elipse1 {
     position: absolute;
     top: -90px;
     left: -20px;
@@ -119,7 +132,7 @@ body{
     z-index: -1;
 }
 
-#pslogan{
+#pslogan {
     position: absolute;
     text-align: justify;
     font-size: 24px;
@@ -181,11 +194,11 @@ body{
     font-family: Poppins;
 }
 
-footer{
+footer {
     font-family: Poppins;
 }
 
-#divFooterPindorama{
+#divFooterPindorama {
     margin-top: 50px;
     background-color: white;
     height: auto;
@@ -194,11 +207,11 @@ footer{
     padding: 30px;
 }
 
-#footerServicos{
+#footerServicos {
     margin: 0 20px;
 }
 
-#footerInstitucional{
+#footerInstitucional {
     margin: 0 20px;
 }
 
@@ -210,4 +223,90 @@ footer{
     align-content: center;
     text-align: center;
     font-style: bold;
+}
+
+.bg-image {
+    background-image: url(../assets/fundo-animais-icons.png);
+    background-size: contain;
+}
+
+#quemSomos {
+    width: 24rem;
+    height: 22.25rem;
+    background-color: var(--azul-400);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        width: 22rem;
+        padding-bottom: 1.25rem;
+    }
+}
+
+.paddingtitulo {
+    padding: 1.875rem 0rem 1.25rem 0rem;
+}
+
+.txtSmall {
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.txtMedium {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#servicos {
+    width: 24rem;
+    height: 20.625rem;
+    background-color: var(--azul-600);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    p {
+        padding: 1.25rem 0rem 1.375rem 0rem;
+        width: 22rem;
+    }
+}
+
+.tamCaixa {
+    width: 21rem;
+}
+
+.btnAgendar {
+    width: 13rem;
+    height: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color: var(--quase-branco-1);
+    color: var(--azul-1100);
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 4.44px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.gato-bg {
+    position: absolute;
+    bottom: 0;
+    right: 3.25rem;
+    pointer-events: none;
+    width: 7.5rem;
 }
