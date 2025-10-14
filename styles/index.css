@@ -1,22 +1,24 @@
-:root{
+:root {
     --azul-escuro-1: #063643;
     --azul-escuro-2: #0F637A;
     --quase-branco-1: #F8F8FF;
     --azul-claro-1: #E2F5FA;
     --azul-claro-2: #7ccbe0;
+    --azul-400: #89C5D5;
+    --azul-600: #63B3C9
 }
 
 img {
     cursor: default;
 }
 
-p{
+p {
     cursor: default;
 }
 
-body{
-    margin:0px;
-    padding:0px;
+body {
+    margin: 0px;
+    padding: 0px;
 
     background-color: var(--azul-claro-1);
     font-family: Inter;
@@ -29,9 +31,16 @@ body{
     font-size: 12px;
     font-style: bold;
 }
+
 .txtLight {
     font-size: 12px;
-    font-weight: 400;;
+    font-weight: 400;
+}
+
+.txtSection {
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: bold;
 }
 
 #divHeader {
@@ -45,7 +54,7 @@ body{
 
 }
 
-.btnPadrao{
+.btnPadrao {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -61,51 +70,52 @@ body{
     transition-duration: 0.25s;
 }
 
-.btnPadrao:hover{
+.btnPadrao:hover {
     transform: scale(1.1);
     background-color: var(--azul-claro-2);
     color: var(--azul-escuro-1);
 }
 
-.btnMenu{
+.btnMenu {
     width: 40px;
     height: 40px;
 }
 
-#scrollPrincipal{
+#scrollPrincipal {
     display: flex;
     justify-content: space-between;
 }
 
-.colunaEspacamento{
+.colunaEspacamento {
     width: 1px;
 }
 
-#colunaPrincipal{
+#colunaPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#logo{
+#logo {
     position: relative;
     height: auto;
     width: auto;
 }
 
-#bannerCentral{
+#bannerCentral {
     position: relative;
     align-self: center;
     height: 200px;
     width: 303px;
 }
 
-#btnContato{
+#btnContato {
     width: 170px;
     height: 40px;
+    margin-bottom: 1.125rem;
 }
 
-#elipse1{
+#elipse1 {
     position: absolute;
     top: -90px;
     left: -20px;
@@ -114,7 +124,7 @@ body{
     z-index: -1;
 }
 
-#pslogan{
+#pslogan {
     position: absolute;
     text-align: justify;
     font-size: 24px;
@@ -129,11 +139,11 @@ body{
     height: auto;
 }
 
-footer{
+footer {
     font-family: Poppins;
 }
 
-#divFooterPindorama{
+#divFooterPindorama {
     margin-top: 50px;
     background-color: white;
     height: auto;
@@ -142,11 +152,11 @@ footer{
     padding: 30px;
 }
 
-#footerServicos{
+#footerServicos {
     margin: 0 20px;
 }
 
-#footerInstitucional{
+#footerInstitucional {
     margin: 0 20px;
 }
 
@@ -158,4 +168,44 @@ footer{
     align-content: center;
     text-align: center;
     font-style: bold;
+}
+
+.bg-image {
+    background-image: url(../assets/fundo-animais-icons.png);
+    background-size: contain;
+}
+
+#quemSomos {
+    width: 24rem;
+    height: 22.25rem;
+    background-color: var(--azul-400);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        margin: 0;
+        width: 22rem;
+        padding-bottom: 1.25rem;
+    }
+}
+
+.paddingQuemSomos {
+    padding: 1.875rem 0rem 1.25rem 0rem;
+}
+
+.txtSmall {
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.txtMedium {
+    font-weight: 700;
+    font-size: 1rem;
 }
