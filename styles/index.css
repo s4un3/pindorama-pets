@@ -156,17 +156,17 @@ header {
     height: auto;
 }
 
-#tituloAvaliacoes{
+#tituloAvaliacoes {
     margin-top: 15px;
 }
 
-.imgAvaliador{
+.imgAvaliador {
     width: 52px;
     height: 52px;
     margin: 0px 20px;
 }
 
-.avaliacao{
+.avaliacao {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -174,7 +174,7 @@ header {
     width: 80%;
 }
 
-.innerAvaliacao{
+.innerAvaliacao {
     height: 80px;
 }
 
@@ -192,22 +192,22 @@ header {
     padding: 0px;
 }
 
-#botoesAvaliacao{
+#botoesAvaliacao {
     display: flex;
     justify-content: space-between;
     width: 120px;
 }
 
-.btnAvaliacao{
+.btnAvaliacao {
     width: 40px;
     cursor: pointer;
 }
 
-#btnAnteriorAval{
+#btnAnteriorAval {
     transform: scale(-1);
 }
 
-#numeroAval{
+#numeroAval {
     font-family: Poppins;
 }
 
@@ -381,7 +381,7 @@ footer {
     transition-duration: 0.25s;
 }
 
-.btnAgendar:hover{
+.btnAgendar:hover {
     background-color: var(--azul-escuro-1);
     color: var(--quase-branco-1);
     transform: scale(1.1);
@@ -393,4 +393,54 @@ footer {
     right: 3.25rem;
     pointer-events: none;
     width: 7.5rem;
+}
+
+#headerProfissionais {
+    width: 24rem;
+    height: 6rem;
+    background-color: var(--azul-claro-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionProfissionais {
+    width: 24rem;
+    height: 30.81rem;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+    background-color: var(--quase-branco-1);
+}
+
+.cardProfissional {
+    width: 10.375rem;
+
+    img {
+        display: block;
+    }
+}
+
+.descricaoProfissional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nomeProfissional {
+    color: var(--azul-1100);
+    font-size: 0.93rem;
+    font-weight: 500;
+}
+
+.especialidadeProfissional {
+    color: var(--azul-1100);
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+.teste {
+    padding-bottom: 2rem;
 }
