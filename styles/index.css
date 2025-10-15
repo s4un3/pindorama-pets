@@ -53,6 +53,12 @@ body {
     cursor: default;
 }
 
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 #divHeader {
     margin-top: 40px;
     background-color: var(--quase-branco-1);
