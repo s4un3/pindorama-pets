@@ -101,14 +101,6 @@ header {
 #scrollPrincipal {
     display: flex;
     justify-content: space-between;
-}
-
-.colunaEspacamento {
-    width: 1px;
-}
-
-#colunaPrincipal {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -123,7 +115,7 @@ header {
     position: relative;
     align-self: center;
     height: 200px;
-    width: 303px;
+    width: 100%;
 }
 
 #btnContato {
@@ -156,6 +148,13 @@ header {
     height: auto;
 }
 
+#avaliacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24rem;
+}
+
 #tituloAvaliacoes {
     margin-top: 15px;
 }
@@ -171,7 +170,7 @@ header {
     flex-direction: row;
     align-items: center;
     margin: 10px 0px;
-    width: 80%;
+    width: 100%;
 }
 
 .innerAvaliacao {
@@ -188,8 +187,8 @@ header {
 .txtAvaliacao {
     font-size: 11px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    width: 80%;
+
 }
 
 #botoesAvaliacao {
@@ -216,7 +215,7 @@ header {
 }
 
 #divContato {
-    width: 24rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,11 +283,11 @@ footer {
 }
 
 #footerServicos {
-    margin: 0 20px;
+    margin: 0;
 }
 
 #footerInstitucional {
-    margin: 0 20px;
+    margin: 0;
 }
 
 #divFooterUnect {
@@ -307,7 +306,7 @@ footer {
 }
 
 #quemSomos {
-    width: 24rem;
+    width: 100%;
     height: 22.25rem;
     background-color: var(--azul-400);
 
@@ -343,7 +342,7 @@ footer {
 }
 
 #servicos {
-    width: 24rem;
+    width: 100%;
     height: 20.625rem;
     background-color: var(--azul-600);
 
@@ -395,29 +394,38 @@ footer {
     width: 7.5rem;
 }
 
+#profissionais{
+    width: 100%;
+}
+
 #headerProfissionais {
-    width: 24rem;
-    height: 6rem;
+    margin: 20px 0;
     background-color: var(--azul-claro-1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .sectionProfissionais {
-    width: 24rem;
-    height: 30.81rem;
-    padding-top: 1rem;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: start;
     background-color: var(--quase-branco-1);
 }
+@media(max-width: 355px){
+    .sectionProfissionais {
+        padding-top: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--quase-branco-1);
+    }
+}
 
 .cardProfissional {
-    width: 10.375rem;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
     img {
         display: block;
     }
@@ -439,8 +447,4 @@ footer {
     color: var(--azul-1100);
     font-size: 0.625rem;
     font-weight: 400;
-}
-
-.teste {
-    padding-bottom: 2rem;
 }
