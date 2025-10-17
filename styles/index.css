@@ -489,3 +489,10 @@ footer {
     font-size: 0.625rem;
     font-weight: 400;
 }
+
+#icones {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
