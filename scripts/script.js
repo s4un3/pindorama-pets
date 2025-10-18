@@ -45,17 +45,33 @@ function updateAval(){
     btn2.style.opacity = 1
     btn2.style.cursor = "pointer"
 
+    let btn3 = document.getElementById("btnAnteriorAvalDesktop")
+    btn3.style.opacity = 1
+    btn3.style.cursor = "pointer"
+
+    let btn4 = document.getElementById("btnProximoAvalDesktop")
+    btn4.style.opacity = 1
+    btn4.style.cursor = "pointer"
+
     let n = Number(document.getElementById("numeroAval").textContent)
 
     if (n == 1){
-        let btn = document.getElementById("btnAnteriorAval")
-        btn.style.opacity = 0
-        btn.style.cursor = "default"
+        let btn1 = document.getElementById("btnAnteriorAval")
+        btn1.style.opacity = 0
+        btn1.style.cursor = "default"
+
+        let btn2 = document.getElementById("btnAnteriorAvalDesktop")
+        btn2.style.opacity = 0
+        btn2.style.cursor = "default"
     }
     if (n == 3){
-        let btn = document.getElementById("btnProximoAval")
-        btn.style.opacity = 0
-        btn.style.cursor = "default"
+        let btn1 = document.getElementById("btnProximoAval")
+        btn1.style.opacity = 0
+        btn1.style.cursor = "default"
+
+        let btn2 = document.getElementById("btnProximoAvalDesktop")
+        btn2.style.opacity = 0
+        btn2.style.cursor = "default"
     }
 
     let nomes = avalNomes[n - 1]
@@ -73,4 +89,5 @@ function updateAval(){
 updateAval()
 document.getElementById("btnAnteriorAval").addEventListener("click", avalAnterior)
 document.getElementById("btnProximoAval").addEventListener("click", avalProximo)
-
+document.getElementById("btnAnteriorAvalDesktop").addEventListener("click", avalAnterior)
+document.getElementById("btnProximoAvalDesktop").addEventListener("click", avalProximo)

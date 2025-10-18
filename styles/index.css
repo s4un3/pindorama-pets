@@ -186,6 +186,19 @@ header {
     flex-direction: column;
     align-items: center;
     width: min(600px, 90%);
+
+    .separador {
+        width: 100%;
+        height: 2px;
+    }
+}
+@media(max-width: 500px){
+    #avaliacoes {
+        .separador {
+            width: 0;
+            height: 0;
+        }
+    }
 }
 
 #tituloAvaliacoes {
@@ -193,8 +206,8 @@ header {
 }
 
 .imgAvaliador {
-    width: 52px;
-    height: 52px;
+    width: 80px;
+    height: 80px;
     margin: 0px 20px;
 }
 
@@ -227,17 +240,45 @@ header {
 #botoesAvaliacao {
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 150px;
+    align-self: flex-end;
 }
 
 .btnAvaliacao {
-    width: 40px;
+    width: 0px;
     cursor: pointer;
 }
 
 #btnAnteriorAval {
     transform: scale(-1);
 }
+
+.btnAvaliacaoDesktop {
+    width: 40px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#btnAnteriorAvalDesktop {
+    transform: scale(-1);
+}
+
+@media(max-width: 500px){
+    .btnAvaliacaoDesktop {
+        width: 0px;
+    }
+    .btnAvaliacao {
+        width: 40px;
+    }
+    #botoesAvaliacao {
+        align-self: center;
+    }
+    .imgAvaliador {
+        height: 52px;
+        width: 52px;
+    }
+}
+
 
 #numeroAval {
     font-family: Poppins;
