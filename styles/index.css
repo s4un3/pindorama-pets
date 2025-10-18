@@ -185,7 +185,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: min(600px, 90%);
 }
 
 #tituloAvaliacoes {
@@ -208,7 +208,7 @@ header {
 
 .innerAvaliacao {
     height: auto;
-    min-height: 80px;
+    min-height: 100px;
 }
 
 .nomeAvaliador {
