@@ -73,6 +73,43 @@ header {
     padding: 0 17px;
 
 }
+#divHeaderDesktop {
+    opacity: 0;
+    background-color: var(--quase-branco-1);
+    height: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 17px;
+
+    #menuDesktop {
+        display: flex;
+        flex-direction: row;
+        div {
+            margin: 0 10px;
+            font-family: Poppins;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 24px;
+        }
+    }
+}
+@media (min-width: 840px){
+    #divHeaderDesktop {
+        height: 140px;
+        opacity: 1;
+    }
+    #divHeader {
+        margin-top: -5px;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+#logoDesktop {
+    width: 250px;
+    height: auto;
+}
 
 .btnPadrao {
     display: flex;
