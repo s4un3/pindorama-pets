@@ -709,14 +709,51 @@ footer {
 }
 #img-servicos-desktop {
     width: 200px;
+    object-fit: cover;
 }
 #servicos-desktop-texto {
     width: 30%;
     margin: 0;
+    text-align: justify;
+    margin: 10px;
 }
 @media (max-width: 650px){
     #servicos-desktop {
         height: 0;
+        opacity: 0;
+    }
+}
+
+#abaixo-servicos {
+    background-color: var(--azul-400);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .inner-abaixo-servicos {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        p {
+            width: 40%;
+            margin-left: 25%;
+            text-align: justify;
+            margin: 10px;
+        }
+    }
+}
+
+#medicina-veterinaria {
+    width: 200px;
+    margin: 10px;
+}
+@media (max-width: 650px) {
+    #abaixo-servicos {
+        height: 0;
+        width: 0;
         opacity: 0;
     }
 }
