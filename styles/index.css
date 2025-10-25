@@ -445,11 +445,6 @@ footer {
     img {
         padding: 1rem;
     }
-
-    p {
-        width: min(22rem, 90%);
-        padding-bottom: 1.25rem;
-    }
 }
 
 .txtSmall {
@@ -641,5 +636,45 @@ footer {
 @media(min-width: 800px){
     .iconesmobile {
         width: 0px;
+    }
+}
+#inner-quemSomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#texto-quemsomos {
+    align-self: center;
+    width: min(22rem, 90%);
+    padding-bottom: 1.25rem;
+}
+@media (max-width: 800px) {
+    #logo-quemSomos-desktop {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+@media (min-width: 800px) {
+    #logo-quemSomos-mobile {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    #logo-quemSomos-desktop {
+        width: 250px;
+    }
+    #inner-quemSomos {
+        flex-direction: row;
+        text-align: justify;
+        align-self: center;
+    }
+    #texto-quemsomos {
+        width: 30%;
+    }
+    #cuidamos-com-amor-mobile {
+        width: 0;
+        height: 0;
+        opacity: 0;
     }
 }
