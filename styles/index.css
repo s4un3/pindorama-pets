@@ -617,3 +617,29 @@ footer {
     justify-content: space-between;
     width: 60%;
 }
+
+#logo-footer-desktop {
+    height: 150px;
+    width: auto;
+}
+
+@media (max-width: 800px){
+    #logo-footer-desktop {
+        width: 0;
+    }
+    #footerContatos{
+        width: 0;
+        overflow: hidden;
+    }
+}
+
+.imgfootercontato {
+    margin-right: 10px;
+    width: 36px;
+}
+
+@media(min-width: 800px){
+    .iconesmobile {
+        width: 0px;
+    }
+}
