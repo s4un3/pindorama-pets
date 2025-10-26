@@ -795,3 +795,9 @@ footer {
     position: relative;
     top: -80px;
 }
+@media (max-width: 800px){
+    #banner-desktop {
+        height: 0;
+        opacity: 0;
+    }
+}
