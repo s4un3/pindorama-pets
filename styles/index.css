@@ -1125,7 +1125,7 @@ footer {
 
     #dots-campanha {
         position: absolute;
-        bottom: 20px;
+        bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -1136,7 +1136,7 @@ footer {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #ffffff;
+        background-color: #A3A3A3;
         opacity: 0.7;
         margin: 0 5px;
         cursor: pointer;
