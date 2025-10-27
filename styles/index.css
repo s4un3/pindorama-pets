@@ -418,6 +418,7 @@ header {
     font-weight: 700;
     font-style: Bold;
     font-size: 20.47px;
+    border-radius: 8px;
 }
 
 @media (min-width: 992px) {
@@ -521,6 +522,7 @@ header {
     }
 
     #btnEnviarForm {
+        width: 144px;
         margin-bottom: 0;
         margin-top: 40px;
     }
