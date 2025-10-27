@@ -51,6 +51,46 @@
             <img id="waveform" src="assets/Waveform.svg">
         </div>
 
+        <div id="campanhas-desktop">
+            <img src="assets/seta-esquerda.svg" id="btnAnteriorCampanha" class="seta-campanha">
+
+            <div id="slides-container">
+                <div id="slide-vacinacao" class="slide-campanha active">
+                    <div class="slide-conteudo-1 conteudoUm">
+                        <h3>Campanha de vacinação</h3>
+                        <p>Nos dias 19 a 28 de novembro</p>
+                        <div class="btnPadrao btn-slide btn-slide-claro-1">Saiba mais</div>
+                    </div>
+                </div>
+
+                <div id="slide-adocao" class="slide-campanha">
+                    <div class="slide-conteudo">
+                        <h3>Campanha de adoção</h3>
+                        <p>Dê um lar cheio de amor a quem só quer te fazer feliz. Adote um amigo de quatro patas e
+                            transforme sua vida e a dele.</p>
+                        <div class="btnPadrao btn-slide btn-slide-claro-2">Saiba mais</div>
+                    </div>
+                </div>
+
+                <div id="slide-banho" class="slide-campanha">
+                    <div class="slide-conteudo">
+                        <h3>Banho e tosa: cuidado e saúde para seu pet</h3>
+                        <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de
+                            parasitas.</p>
+                        <div class="btnPadrao btn-slide btn-slide-escuro">Saiba mais</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/seta-direita.svg" id="btnProximoCampanha" class="seta-campanha">
+
+            <div id="dots-campanha">
+                <span class="dot-campanha active" data-slide="1"></span>
+                <span class="dot-campanha" data-slide="2"></span>
+                <span class="dot-campanha" data-slide="3"></span>
+            </div>
+        </div>
+
         <div id="quemSomos" class="bg-image">
             <div class="txtSection-2">Quem somos?</div>
             <div id="inner-quemSomos">
@@ -58,7 +98,8 @@
                     <img src="./assets/logo-letra-branca.svg" id="logo-quemSomos-mobile" alt="Logo pindorama pets">
                 </div>
                 <div class="logo">
-                    <img src="./assets/logo-quem-somos-desktop.svg" id="logo-quemSomos-desktop" alt="Logo pindorama pets">
+                    <img src="./assets/logo-quem-somos-desktop.svg" id="logo-quemSomos-desktop"
+                        alt="Logo pindorama pets">
                 </div>
                 <p class="txtSmall" id="texto-quemsomos">
                     Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe
@@ -85,13 +126,17 @@
             <p class="txtSection tamCaixa">Nossos serviços</p>
             <div id="inner-servicos-desktop">
                 <img id="img-servicos-desktop" src="assets/servicos-desktop.png">
-                <p class="txtSmall" id="servicos-desktop-texto">Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
+                <p class="txtSmall" id="servicos-desktop-texto">Na nossa clínica veterinária, cada consulta é realizada
+                    com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma
+                    equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
             </div>
         </div>
 
         <div id="abaixo-servicos" class="bg-image">
             <div class="inner-abaixo-servicos">
-                <p class="txtSmall">Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa. </p>
+                <p class="txtSmall">Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica
+                    atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se
+                    sinta em casa. </p>
                 <img id="medicina-veterinaria" src="assets/Medicina-Veterinaria 1.png">
             </div>
         </div>
@@ -170,52 +215,65 @@
 
         <div id="divContato">
             <p class="txtSection" id="tituloContato">Entre em contato</p>
-            <form id="formContato">
-                <p>Nome</p>
-                <input type="text"></input>
-                <p>Sobrenome</p>
-                <input type="text"></input>
-                <p>Email</p>
-                <input type="text"></input>
-                <p>Mensagem</p>
-                <textarea></textarea>
-            </form>
-            <div id="btnEnviarForm" class="btnPadrao">ENVIAR</div>
-        </div>
-        <div id="icones">
-            <img class="iconesmobile" src="assets/icon-whatsapp.svg">
-            <img class="iconesmobile" src="assets/icon-instagram.svg">
-            <img class="iconesmobile" src="assets/icon-face.svg">
-        </div>
-    </div>
-    <footer>
-        <div id="divFooterPindorama">
-            <img src="assets/logo-footer-desktop.svg" id="logo-footer-desktop">
-            <div id="footerServicos">
-                <p class="txtSubtitle">NOSSOS SERVIÇOS</p>
-                <p class="txtLight">SOBRE NÓS</p>
-                <p class="txtLight">CONSULTA VETERINÁRIA</p>
-                <p class="txtLight">NOSSOS SERVIÇOS</p>
 
-            </div>
-            <div id="footerInstitucional">
-                <p class="txtSubtitle">INSTITUCIONAL</p>
-                <p class="txtLight">PROGRAMA DE ADOÇÃO</p>
-                <p class="txtLight">TERMOS DE COMPROMISSO</p>
-                <p class="txtLight">UNECT JR</p>
-            </div>
-            <div id="footerContatos">
-                <p class="txtSubtitle">NOSSOS CONTATOS</p>
-                <div id="contatofooter">
-                    <img class="imgfootercontato" src="assets/icon-whatsapp.svg">
-                    <img class="imgfootercontato" src="assets/icon-instagram.svg">
-                    <img class="imgfootercontato" src="assets/icon-face.svg">
+            <div id="contatoContainer">
+                <div id="contatoInfo">
+                    <h3>Localização</h3>
+                    <p class="loc">Rua - Fulana de tal, 9999<br>CEP 99999-999<br>Pindorama/SP</p>
+                    <img src="./assets/mapaPindorama.png" alt="Mapa de Pindorama">
+                    <div id="contatoRedes">
+                        <p><img src="./assets/icon-whatsapp.svg" alt="Ícone Whatsapp"> (99) 99999-9999</p>
+                        <p><img src="./assets/icon-instagram.svg" alt="Ícone Instagram"> @PindoramaClinica</p>
+                        <p><img src="./assets/icon-face.svg" alt="Ícone Facebook"> PindoramaClinica</p>
+                    </div>
                 </div>
 
+                <form id="formContato">
+                    <p>Nome</p>
+                    <input type="text" class="inputCtt"></input>
+                    <p>Sobrenome</p>
+                    <input type="text" class="inputCtt"></input>
+                    <p>Email</p>
+                    <input type="text" class="inputCtt"></input>
+                    <p>Mensagem</p>
+                    <textarea class="textareaCtt"></textarea>
+                    <div id="btnEnviarForm" class="btnPadrao">ENVIAR</div>
+                </form>
+            </div>
+            <div id="icones">
+                <img class="iconesmobile" src="assets/icon-whatsapp.svg">
+                <img class="iconesmobile" src="assets/icon-instagram.svg">
+                <img class="iconesmobile" src="assets/icon-face.svg">
             </div>
         </div>
-        <div id="divFooterUnect">UNECT JR - TODOS OS DIREITOS RESERVADOS</div>
-    </footer>
+        <footer>
+            <div id="divFooterPindorama">
+                <img src="assets/logo-footer-desktop.svg" id="logo-footer-desktop">
+                <div id="footerServicos">
+                    <p class="txtSubtitle">NOSSOS SERVIÇOS</p>
+                    <p class="txtLight">SOBRE NÓS</p>
+                    <p class="txtLight">CONSULTA VETERINÁRIA</p>
+                    <p class="txtLight">NOSSOS SERVIÇOS</p>
+
+                </div>
+                <div id="footerInstitucional">
+                    <p class="txtSubtitle">INSTITUCIONAL</p>
+                    <p class="txtLight">PROGRAMA DE ADOÇÃO</p>
+                    <p class="txtLight">TERMOS DE COMPROMISSO</p>
+                    <p class="txtLight">UNECT JR</p>
+                </div>
+                <div id="footerContatos">
+                    <p class="txtSubtitle">NOSSOS CONTATOS</p>
+                    <div id="contatofooter">
+                        <img class="imgfootercontato" src="assets/icon-whatsapp.svg">
+                        <img class="imgfootercontato" src="assets/icon-instagram.svg">
+                        <img class="imgfootercontato" src="assets/icon-face.svg">
+                    </div>
+
+                </div>
+            </div>
+            <div id="divFooterUnect">UNECT JR - TODOS OS DIREITOS RESERVADOS</div>
+        </footer>
 </body>
 <script src="scripts/script.js" defer></script>
 

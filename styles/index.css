@@ -74,6 +74,7 @@ header {
     padding: 0 17px;
 
 }
+
 #divHeaderDesktop {
     opacity: 0;
     width: 0;
@@ -85,10 +86,12 @@ header {
     padding: 0 17px;
     overflow: hidden;
 }
+
 #menuDesktop {
     width: 0;
     display: flex;
     flex-direction: row;
+
     .menuDesktopItem {
         margin: 0 10px;
         font-family: Poppins;
@@ -97,22 +100,26 @@ header {
         font-size: 24px;
     }
 }
-@media (min-width: 840px){
+
+@media (min-width: 840px) {
     #divHeaderDesktop {
         height: 140px;
         opacity: 1;
         width: auto;
     }
+
     #menuDesktop {
         width: auto;
     }
+
     #divHeader {
         margin-top: -5px;
         height: 0;
         opacity: 0;
     }
 }
-@media (max-width: 840px){
+
+@media (max-width: 840px) {
     .menuDesktopItem {
         width: 0px;
     }
@@ -200,14 +207,17 @@ header {
     overflow: hidden;
     object-fit: cover;
 }
-@media(max-width: 410px){
-    #bannerCentral{
+
+@media(max-width: 410px) {
+    #bannerCentral {
         width: 90%;
     }
-    #elipse1{
+
+    #elipse1 {
         width: 0;
         height: 0;
     }
+
     #pslogan {
         top: 0;
         left: 0;
@@ -236,7 +246,8 @@ header {
         height: 2px;
     }
 }
-@media(max-width: 500px){
+
+@media(max-width: 500px) {
     #avaliacoes {
         .separador {
             width: 0;
@@ -248,6 +259,7 @@ header {
 #tituloAvaliacoes {
     margin-top: 15px;
 }
+
 #tituloAvaliacoes::after {
     content: " (34)"
 }
@@ -310,22 +322,25 @@ header {
     transform: scale(-1);
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
     .btnAvaliacaoDesktop {
         width: 0px;
     }
+
     .btnAvaliacao {
         width: 40px;
     }
+
     #botoesAvaliacao {
         align-self: center;
     }
+
     .imgAvaliador {
         height: 52px;
         width: 52px;
     }
 
-    #tituloAvaliacoes::after{
+    #tituloAvaliacoes::after {
         content: " (9)"
     }
 }
@@ -337,6 +352,17 @@ header {
 
 #tituloContato {
     font-family: Inter;
+}
+
+#contatoContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contatoInfo {
+    display: none;
 }
 
 #divContato {
@@ -351,6 +377,7 @@ header {
 
     form {
         width: 80%;
+
         p {
             font-family: Inter;
             font-weight: 700;
@@ -391,7 +418,118 @@ header {
     font-weight: 700;
     font-style: Bold;
     font-size: 20.47px;
+    border-radius: 8px;
+}
 
+@media (min-width: 992px) {
+    #divContato {
+        background-color: var(--azul-claro-1);
+    }
+
+    #tituloContato {
+        width: 60%;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    #contatoContainer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        width: 60%;
+        border: solid rgba(0, 0, 0, 0.205) 1px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px #00000015;
+    }
+
+    #contatoInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--quase-branco-1);
+        padding: 25px;
+        flex: 1;
+        border-right: solid rgba(0, 0, 0, 0.205) 1px;
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    #contatoInfo h3 {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--azul-1100);
+    }
+
+    #contatoInfo .loc {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--azul-1100);
+        font-style: italic;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    #contatoInfo img {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        padding-bottom: 46px;
+    }
+
+    #contatoRedes {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    #contatoRedes p {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            width: 36px;
+            height: 36px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    #formContato {
+        flex: 1;
+        padding: 35px 40px;
+        box-sizing: border-box;
+        background-color: var(--quase-branco-2);
+        border-radius: 0px 4px 4px 0px;
+
+        .inputCtt {
+            height: 50px;
+        }
+
+        .textareaCtt {
+            height: 120px;
+        }
+    }
+
+    #formContato p {
+        font-size: 14px;
+    }
+
+    #btnEnviarForm {
+        width: 144px;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    #icones {
+        display: none;
+    }
 }
 
 footer {
@@ -475,7 +613,8 @@ footer {
 
     p {
         padding: 1.25rem 0rem 1.375rem 0rem;
-        width: min(22rem, 90%);;
+        width: min(22rem, 90%);
+        ;
     }
 }
 
@@ -501,8 +640,9 @@ footer {
     cursor: pointer;
     transition-duration: 0.25s;
 }
+
 @media(max-width: 245px) {
-    .btnAgendar{
+    .btnAgendar {
         width: 80%;
     }
 }
@@ -522,7 +662,7 @@ footer {
     z-index: -1;
 }
 
-#profissionais{
+#profissionais {
     width: 100%;
     background-color: var(--quase-branco-1);
 }
@@ -546,16 +686,19 @@ footer {
     justify-items: center;
     align-items: start;
 }
-@media(max-width: 375px){
+
+@media(max-width: 375px) {
     .sectionProfissionais {
         padding-top: 1rem;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-items: center;
-        align-items: center;    }
+        align-items: center;
+    }
 }
-@media(min-width: 800px){
+
+@media(min-width: 800px) {
     .sectionProfissionais {
         display: flex;
         flex-direction: row;
@@ -565,15 +708,18 @@ footer {
         width: 100%;
         align-self: center;
     }
+
     #profissionais {
         max-width: 1180px;
         box-shadow: 0px 2px 4px 0px #00000040;
         border-radius: 8px;
     }
+
     #headerProfissionaisDesktop {
         opacity: 1;
         height: auto;
     }
+
     #headerProfissionais {
         opacity: 0;
         height: 0;
@@ -583,6 +729,7 @@ footer {
 .cardProfissional {
     padding-top: 20px;
     padding-bottom: 20px;
+
     img {
         display: block;
     }
@@ -618,11 +765,12 @@ footer {
     width: auto;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     #logo-footer-desktop {
         width: 0;
     }
-    #footerContatos{
+
+    #footerContatos {
         width: 0;
         overflow: hidden;
     }
@@ -633,21 +781,24 @@ footer {
     width: 36px;
 }
 
-@media(min-width: 650px){
+@media(min-width: 650px) {
     .iconesmobile {
         width: 0px;
     }
 }
+
 #inner-quemSomos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 #texto-quemsomos {
     align-self: center;
     width: min(22rem, 90%);
     padding-bottom: 1.25rem;
 }
+
 @media (max-width: 650px) {
     #logo-quemSomos-desktop {
         width: 0;
@@ -655,29 +806,35 @@ footer {
         opacity: 0;
     }
 }
+
 @media (min-width: 650px) {
     #logo-quemSomos-mobile {
         width: 0;
         height: 0;
         opacity: 0;
     }
+
     #logo-quemSomos-desktop {
         width: 250px;
     }
+
     #inner-quemSomos {
         flex-direction: row;
         text-align: justify;
         align-self: center;
     }
+
     #texto-quemsomos {
         width: 30%;
     }
+
     #cuidamos-com-amor-mobile {
         width: 0;
         height: 0;
         opacity: 0;
     }
-    #servicos{
+
+    #servicos {
         height: 0;
         opacity: 0;
         padding: 0;
@@ -701,23 +858,27 @@ footer {
         margin: 20px;
     }
 }
+
 #inner-servicos-desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
 }
+
 #img-servicos-desktop {
     width: 200px;
     object-fit: cover;
 }
+
 #servicos-desktop-texto {
     width: 30%;
     margin: 0;
     text-align: justify;
     margin: 10px;
 }
-@media (max-width: 650px){
+
+@media (max-width: 650px) {
     #servicos-desktop {
         height: 0;
         opacity: 0;
@@ -730,6 +891,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     .inner-abaixo-servicos {
         width: 80%;
         display: flex;
@@ -750,6 +912,7 @@ footer {
     width: 200px;
     margin: 10px;
 }
+
 @media (max-width: 650px) {
     #abaixo-servicos {
         height: 0;
@@ -757,11 +920,13 @@ footer {
         opacity: 0;
     }
 }
+
 @media (min-width: 800px) {
     #bannerCentral {
         height: 0;
         opacity: 0;
     }
+
     #btnContato {
         height: 0;
         opacity: 0;
@@ -777,12 +942,14 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
 }
+
 #pets-desktop {
     width: 260px;
     position: relative;
     left: 130px;
     top: 20px;
 }
+
 #waveform {
     width: 200px;
     position: relative;
@@ -790,14 +957,196 @@ footer {
     left: 300px;
     z-index: 0;
 }
+
 #btnContato-desktop {
     width: 150px;
     position: relative;
     top: -80px;
 }
-@media (max-width: 800px){
+
+@media (max-width: 800px) {
     #banner-desktop {
         height: 0;
         opacity: 0;
+    }
+}
+
+#campanhas-desktop {
+    display: none;
+}
+
+@media (min-width: 801px) {
+    #campanhas-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        background-color: var(--azul-claro-1);
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .seta-campanha {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin: 0 20px;
+        z-index: 2;
+        transition: transform 0.2s;
+    }
+
+    .seta-campanha:hover {
+        transform: scale(1.2);
+    }
+
+    #slides-container {
+        position: relative;
+        width: 80%;
+        max-width: 900px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide-campanha {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .slide-campanha.active {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .slide-conteudo {
+        max-width: 400px;
+        margin-left: 60px;
+        color: var(--azul-escuro-1);
+    }
+
+    .conteudoUm {
+        margin-left: 350px;
+    }
+
+    .slide-conteudo-1 h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    .slide-conteudo-1 p {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 51px;
+    }
+
+    .slide-conteudo h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .slide-conteudo p {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 10px 0 20px 0;
+    }
+
+    .btn-slide {
+        width: 185px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .btn-slide-claro-1 {
+        background-color: var(--quase-branco-1);
+        color: var(--azul-escuro-1);
+    }
+
+    .btn-slide-claro-1:hover {
+        background-color: var(--azul-escuro-1);
+        color: var(--quase-branco-1);
+    }
+
+    .btn-slide-claro-2 {
+        background-color: var(--quase-branco-1);
+        color: var(--azul-escuro-1);
+    }
+
+    .btn-slide-claro-2:hover {
+        background-color: var(--azul-claro-2);
+        color: var(--azul-escuro-1);
+    }
+
+    .btn-slide-escuro {
+        background-color: var(--azul-escuro-1);
+        color: var(--quase-branco-1);
+    }
+
+    .btn-slide-escuro:hover {
+        background-color: var(--azul-claro-2);
+        color: var(--azul-escuro-1);
+    }
+
+    #slide-vacinacao {
+        background-image: url(../assets/banner-vacina.png);
+    }
+
+    #slide-adocao {
+        background-image: url(../assets/banner-adocao.png);
+    }
+
+    #slide-adocao .slide-conteudo {
+        color: var(--quase-branco-1);
+    }
+
+    #slide-banho {
+        background-image: url(../assets/banner-banho.png);
+    }
+
+    #dots-campanha {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 2;
+    }
+
+    .dot-campanha {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #A3A3A3;
+        opacity: 0.7;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .dot-campanha.active {
+        background-color: var(--azul-escuro-2);
+        opacity: 1;
+        transform: scale(1.1);
     }
 }
