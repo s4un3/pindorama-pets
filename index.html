@@ -1,27 +1,280 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-    </head>
+
+<head>
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
     <header>
-        <div id="divRespiro"></div>
         <div id="divHeader">
-            <button class="btnMenu" id="btnMenu">Texto placeholder</button>
-            <img id="logo" src="logo.png">
+            <div class="btnMenu" id="btnMenu">
+                <img src="assets/menu.svg">
+            </div>
+            <img id="logo" src="assets/logo.svg">
             <div class="btnMenu"></div> <!-- Para ficar do mesmo tamanho do botão -->
         </div>
-    </header>
-    <body>
-        <div id="bannerCentral">
-            <p style="text-align: justify;">Cuidamos do seu animal com muito amor</p>
-            <img src="img.png" width="80%" height="auto">
+        <div id="divHeaderDesktop">
+            <img src="assets/Logo-horizontal.svg" id="logoDesktop">
+            <div id="menuDesktop">
+                <div class="menuDesktopItem">Início</div>
+                <div class="menuDesktopItem">Serviços</div>
+                <div class="menuDesktopItem">Sobre nós</div>
+                <div class="menuDesktopItem">Contato</div>
+            </div>
         </div>
-    </body>
-    <footer>
-        <div id="divFooterPindorama"></div>
-        <div id="divFooterUnect">UNECT JR - TODOS OS DIREITOS RESERVADOS</div>
-    </footer>
-    <script src="scipt.js" defer></script>
+    </header>
+    <div id="scrollPrincipal">
+
+        <div id="bannerCentral">
+            <img id="elipse1" src="assets/elipse.svg">
+            <p id="pslogan">Cuidamos do seu animal com muito amor</p>
+            <img id="imgpets" src="assets/img.png">
+        </div>
+        <div class="btnPadrao" id="btnContato">Entre em contato</div>
+
+        <div id="banner-desktop">
+            <p id="slogan-dekstop">Cuidando do Seu Pet com Profissionalismo e Carinho </p>
+            <img id="pets-desktop" src="assets/img.png">
+            <div class="btnPadrao" id="btnContato-desktop">Entre em contato</div>
+            <img id="waveform" src="assets/Waveform.svg">
+        </div>
+
+        <div id="campanhas-desktop">
+            <img src="assets/seta-esquerda.svg" id="btnAnteriorCampanha" class="seta-campanha">
+
+            <div id="slides-container">
+                <div id="slide-vacinacao" class="slide-campanha active">
+                    <div class="slide-conteudo-1 conteudoUm">
+                        <h3>Campanha de vacinação</h3>
+                        <p>Nos dias 19 a 28 de novembro</p>
+                        <div class="btnPadrao btn-slide btn-slide-claro-1">Saiba mais</div>
+                    </div>
+                </div>
+
+                <div id="slide-adocao" class="slide-campanha">
+                    <div class="slide-conteudo">
+                        <h3>Campanha de adoção</h3>
+                        <p>Dê um lar cheio de amor a quem só quer te fazer feliz. Adote um amigo de quatro patas e
+                            transforme sua vida e a dele.</p>
+                        <div class="btnPadrao btn-slide btn-slide-claro-2">Saiba mais</div>
+                    </div>
+                </div>
+
+                <div id="slide-banho" class="slide-campanha">
+                    <div class="slide-conteudo">
+                        <h3>Banho e tosa: cuidado e saúde para seu pet</h3>
+                        <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de
+                            parasitas.</p>
+                        <div class="btnPadrao btn-slide btn-slide-escuro">Saiba mais</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/seta-direita.svg" id="btnProximoCampanha" class="seta-campanha">
+
+            <div id="dots-campanha">
+                <span class="dot-campanha active" data-slide="1"></span>
+                <span class="dot-campanha" data-slide="2"></span>
+                <span class="dot-campanha" data-slide="3"></span>
+            </div>
+        </div>
+
+        <div id="quemSomos" class="bg-image">
+            <div class="txtSection-2">Quem somos?</div>
+            <div id="inner-quemSomos">
+                <div class="logo">
+                    <img src="./assets/logo-letra-branca.svg" id="logo-quemSomos-mobile" alt="Logo pindorama pets">
+                </div>
+                <div class="logo">
+                    <img src="./assets/logo-quem-somos-desktop.svg" id="logo-quemSomos-desktop"
+                        alt="Logo pindorama pets">
+                </div>
+                <p class="txtSmall" id="texto-quemsomos">
+                    Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe
+                    dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.
+                </p>
+                <div></div>
+            </div>
+            <div class="txtMedium" id="cuidamos-com-amor-mobile">Cuidamos do seu animalzinho com amor!</div>
+        </div>
+
+        <div id="servicos" class="bg-image">
+            <div class="txtSection tamCaixa">Nossos serviços visam o cuidado do seu pet </div>
+            <p class="txtSmall">
+                Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes,
+                garantindo o melhor cuidado para o seu pet.
+            </p>
+            <div class="btnAgendar">
+                Agende uma consulta
+            </div>
+            <img src="./assets/gato-bg.svg" alt="Imagem de um gato tentando clicar no botão" class="gato-bg">
+        </div>
+
+        <div id="servicos-desktop" class="bg-image">
+            <p class="txtSection tamCaixa">Nossos serviços</p>
+            <div id="inner-servicos-desktop">
+                <img id="img-servicos-desktop" src="assets/servicos-desktop.png">
+                <p class="txtSmall" id="servicos-desktop-texto">Na nossa clínica veterinária, cada consulta é realizada
+                    com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma
+                    equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
+            </div>
+        </div>
+
+        <div id="abaixo-servicos" class="bg-image">
+            <div class="inner-abaixo-servicos">
+                <p class="txtSmall">Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica
+                    atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se
+                    sinta em casa. </p>
+                <img id="medicina-veterinaria" src="assets/Medicina-Veterinaria 1.png">
+            </div>
+        </div>
+
+        <div id="headerProfissionais" class="txtSection">Nossos Profissionais</div>
+        <div id="profissionais">
+            <div id="headerProfissionaisDesktop" class="txtSection">Nossos Profissionais</div>
+            <div class="sectionProfissionais">
+                <div class="cardProfissional">
+                    <img src="./assets/medico1.png" alt="Imagem medico 1">
+                    <div class="descricaoProfissional">
+                        <div class="nomeProfissional">Carlos de Souza</div>
+                        <div class="especialidadeProfissional">Cirurgia Veterinária</div>
+                    </div>
+                </div>
+                <div class="cardProfissional">
+                    <img src="./assets/medico2.png" alt="Imagem medico 2">
+                    <div class="descricaoProfissional">
+                        <div class="nomeProfissional">João Paulo</div>
+                        <div class="especialidadeProfissional">Dermatologia Veterinária</div>
+                    </div>
+                </div>
+                <div class="cardProfissional">
+                    <img src="./assets/medico3.png" alt="Imagem medico 3">
+                    <div class="descricaoProfissional">
+                        <div class="nomeProfissional">José da Silva</div>
+                        <div class="especialidadeProfissional">Patologia</div>
+                    </div>
+                </div>
+                <div class="cardProfissional">
+                    <img src="./assets/medico4.png" alt="Imagem medico 4">
+                    <div class="descricaoProfissional">
+                        <div class="nomeProfissional">José Aldo</div>
+                        <div class="especialidadeProfissional">Anestesiologia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="avaliacoes">
+            <p class="txtSection" id="tituloAvaliacoes">Avaliações</p>
+            <div id="avaliacao1" class="avaliacao">
+                <img src="assets/avaliador1.svg" class="imgAvaliador">
+                <div class="innerAvaliacao">
+                    <img src="assets/stars.svg">
+                    <p class="nomeAvaliador" id="nomeAvaliador1">Nome</p>
+                    <p class="txtAvaliacao" id="txtAvaliacao1">Texto</p>
+                </div>
+            </div>
+            <img src="assets/separador.svg" class="separador">
+            <div id="avaliacao2" class="avaliacao">
+                <img src="assets/avaliador2.svg" class="imgAvaliador">
+                <div class="innerAvaliacao">
+                    <img src="assets/stars.svg">
+                    <p class="nomeAvaliador" id="nomeAvaliador2">Nome</p>
+                    <p class="txtAvaliacao" id="txtAvaliacao2">Texto</p>
+                </div>
+            </div>
+            <img src="assets/separador.svg" class="separador">
+            <div id="avaliacao3" class="avaliacao">
+                <img src="assets/avaliador3.svg" class="imgAvaliador">
+                <div class="innerAvaliacao">
+                    <img src="assets/stars.svg">
+                    <p class="nomeAvaliador" id="nomeAvaliador3">Nome</p>
+                    <p class="txtAvaliacao" id="txtAvaliacao3">Texto</p>
+                </div>
+            </div>
+            <div id="botoesAvaliacao">
+                <img src="assets/proximo.svg" id="btnAnteriorAval" class="btnAvaliacao">
+                <img src="assets/proximo-desktop.svg" id="btnAnteriorAvalDesktop" class="btnAvaliacaoDesktop">
+                <p id="numeroAval">1</p>
+                <img src="assets/proximo-desktop.svg" id="btnProximoAvalDesktop" class="btnAvaliacaoDesktop">
+                <img src="assets/proximo.svg" id="btnProximoAval" class="btnAvaliacao">
+            </div>
+        </div>
+
+        <div id="divContato">
+            <p class="txtSection" id="tituloContato">Entre em contato</p>
+
+            <div id="contatoContainer">
+                <div id="contatoInfo">
+                    <h3>Localização</h3>
+                    <p class="loc">Rua - Fulana de tal, 9999<br>CEP 99999-999<br>Pindorama/SP</p>
+                    <img src="./assets/mapaPindorama.png" alt="Mapa de Pindorama">
+                    <div id="contatoRedes">
+                        <p><img src="./assets/icon-whatsapp.svg" alt="Ícone Whatsapp"> (99) 99999-9999</p>
+                        <p><img src="./assets/icon-instagram.svg" alt="Ícone Instagram"> @PindoramaClinica</p>
+                        <p><img src="./assets/icon-face.svg" alt="Ícone Facebook"> PindoramaClinica</p>
+                    </div>
+                </div>
+
+                <form id="formContato">
+                    <p>Nome</p>
+                    <input type="text" class="inputCtt"></input>
+                    <p>Sobrenome</p>
+                    <input type="text" class="inputCtt"></input>
+                    <p>Email</p>
+                    <input type="text" class="inputCtt"></input>
+                    <p>Mensagem</p>
+                    <textarea class="textareaCtt"></textarea>
+                    <div id="btnEnviarForm" class="btnPadrao">ENVIAR</div>
+                </form>
+            </div>
+            <div id="icones">
+                <img class="iconesmobile" src="assets/icon-whatsapp.svg">
+                <img class="iconesmobile" src="assets/icon-instagram.svg">
+                <img class="iconesmobile" src="assets/icon-face.svg">
+            </div>
+        </div>
+        <footer>
+            <div id="divFooterPindorama">
+                <img src="assets/logo-footer-desktop.svg" id="logo-footer-desktop">
+                <div id="footerServicos">
+                    <p class="txtSubtitle">NOSSOS SERVIÇOS</p>
+                    <p class="txtLight">SOBRE NÓS</p>
+                    <p class="txtLight">CONSULTA VETERINÁRIA</p>
+                    <p class="txtLight">NOSSOS SERVIÇOS</p>
+
+                </div>
+                <div id="footerInstitucional">
+                    <p class="txtSubtitle">INSTITUCIONAL</p>
+                    <p class="txtLight">PROGRAMA DE ADOÇÃO</p>
+                    <p class="txtLight">TERMOS DE COMPROMISSO</p>
+                    <p class="txtLight">UNECT JR</p>
+                </div>
+                <div id="footerContatos">
+                    <p class="txtSubtitle">NOSSOS CONTATOS</p>
+                    <div id="contatofooter">
+                        <img class="imgfootercontato" src="assets/icon-whatsapp.svg">
+                        <img class="imgfootercontato" src="assets/icon-instagram.svg">
+                        <img class="imgfootercontato" src="assets/icon-face.svg">
+                    </div>
+
+                </div>
+            </div>
+            <div id="divFooterUnect">UNECT JR - TODOS OS DIREITOS RESERVADOS</div>
+        </footer>
+</body>
+<script src="scripts/script.js" defer></script>
+
 </html>
