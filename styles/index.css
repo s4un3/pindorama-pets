@@ -434,7 +434,7 @@ header {
     #contatoContainer {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: stretch;
         width: 60%;
         border: solid rgba(0, 0, 0, 0.205) 1px;
         border-radius: 4px;
@@ -442,15 +442,14 @@ header {
     }
 
     #contatoInfo {
-        width: 420px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         background-color: var(--quase-branco-1);
         padding: 25px;
         flex: 1;
-        max-width: 35%;
         border-right: solid rgba(0, 0, 0, 0.205) 1px;
+        border-radius: 4px 0px 0px 4px;
     }
 
     #contatoInfo h3 {
@@ -505,6 +504,7 @@ header {
         padding: 35px 40px;
         box-sizing: border-box;
         background-color: var(--quase-branco-2);
+        border-radius: 0px 4px 4px 0px;
 
         .inputCtt {
             height: 50px;
