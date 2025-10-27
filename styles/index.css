@@ -157,6 +157,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 #logo {
@@ -534,6 +535,7 @@ header {
 
 footer {
     font-family: Poppins;
+    width: 100%;
 }
 
 #divFooterPindorama {
@@ -785,6 +787,7 @@ footer {
     .iconesmobile {
         width: 0px;
     }
+
 }
 
 #inner-quemSomos {
@@ -864,6 +867,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
+    overflow: hidden;
 }
 
 #img-servicos-desktop {
@@ -884,13 +888,13 @@ footer {
         opacity: 0;
     }
 }
-
 #abaixo-servicos {
     background-color: var(--azul-400);
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow: hidden;
 
     .inner-abaixo-servicos {
         width: 80%;
@@ -941,6 +945,7 @@ footer {
     width: 450px;
     padding: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 #pets-desktop {
@@ -967,6 +972,7 @@ footer {
 @media (max-width: 800px) {
     #banner-desktop {
         height: 0;
+        width: 0;
         opacity: 0;
     }
 }
