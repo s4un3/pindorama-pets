@@ -970,3 +970,182 @@ footer {
         opacity: 0;
     }
 }
+
+#campanhas-desktop {
+    display: none;
+}
+
+@media (min-width: 801px) {
+    #campanhas-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0;
+        background-color: var(--quase-branco-1);
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .seta-campanha {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin: 0 20px;
+        z-index: 2;
+        transition: transform 0.2s;
+    }
+
+    .seta-campanha:hover {
+        transform: scale(1.2);
+    }
+
+    #slides-container {
+        position: relative;
+        width: 80%;
+        max-width: 900px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide-campanha {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .slide-campanha.active {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .slide-conteudo {
+        max-width: 400px;
+        margin-left: 60px;
+        color: var(--azul-escuro-1);
+    }
+
+    .conteudoUm {
+        margin-left: 350px;
+    }
+
+    .slide-conteudo-1 h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    .slide-conteudo-1 p {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 51px;
+    }
+
+    .slide-conteudo h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .slide-conteudo p {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 10px 0 20px 0;
+    }
+
+    .btn-slide {
+        width: 160px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .btn-slide-claro-1 {
+        background-color: var(--quase-branco-1);
+        color: var(--azul-escuro-1);
+    }
+
+    .btn-slide-claro-1:hover {
+        background-color: var(--azul-escuro-1);
+        color: var(--quase-branco-1);
+    }
+
+    .btn-slide-claro-2 {
+        background-color: var(--quase-branco-1);
+        color: var(--azul-escuro-1);
+    }
+
+    .btn-slide-claro-2:hover {
+        background-color: var(--azul-claro-2);
+        color: var(--azul-escuro-1);
+    }
+
+    .btn-slide-escuro {
+        background-color: var(--azul-escuro-1);
+        color: var(--quase-branco-1);
+    }
+
+    .btn-slide-escuro:hover {
+        background-color: var(--azul-claro-2);
+        color: var(--azul-escuro-1);
+    }
+
+    #slide-vacinacao {
+        background-image: url(../assets/banner-vacina.png);
+    }
+
+    #slide-adocao {
+        background-image: url(../assets/banner-adocao.png);
+    }
+
+    #slide-adocao .slide-conteudo {
+        color: var(--quase-branco-1);
+    }
+
+    #slide-banho {
+        background-image: url(../assets/banner-banho.png);
+    }
+
+    #dots-campanha {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 2;
+    }
+
+    .dot-campanha {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        opacity: 0.7;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .dot-campanha.active {
+        background-color: var(--azul-escuro-2);
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
