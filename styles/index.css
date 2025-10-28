@@ -993,6 +993,7 @@ footer {
         background-color: var(--azul-claro-1);
         position: relative;
         box-sizing: border-box;
+        z-index: 0;
     }
 
     .seta-campanha {
