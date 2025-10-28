@@ -92,19 +92,13 @@ document.getElementById("btnProximoAval").addEventListener("click", avalProximo)
 document.getElementById("btnAnteriorAvalDesktop").addEventListener("click", avalAnterior)
 document.getElementById("btnProximoAvalDesktop").addEventListener("click", avalProximo)
 
-// Adiciona um listener para garantir que o DOM esteja carregado
-// Isso evita erros caso os elementos ainda não existam
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Seleciona os elementos do novo carrossel
-    // Usamos '|| {}' como um "guarda" para evitar erros em mobile, 
-    // onde os elementos não existem (pois estão com display: none)
     const btnAnterior = document.getElementById("btnAnteriorCampanha") || {};
     const btnProximo = document.getElementById("btnProximoCampanha") || {};
     const slides = document.querySelectorAll(".slide-campanha");
     const dots = document.querySelectorAll(".dot-campanha");
 
-    // Se não encontrar os slides (ex: modo mobile), não faz nada
     if (slides.length === 0) {
         return;
     }
@@ -112,11 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let slideAtual = 1;
     const totalSlides = slides.length;
 
-    // Função principal para atualizar a visualização do slide
     function updateCampanha(novoSlide) {
         slideAtual = novoSlide;
 
-        // Atualiza a classe 'active' nos slides
         slides.forEach((slide, index) => {
             if (index === (slideAtual - 1)) {
                 slide.classList.add("active");
@@ -125,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Atualiza a classe 'active' nas bolinhas (dots)
         dots.forEach((dot, index) => {
             if (index === (slideAtual - 1)) {
                 dot.classList.add("active");
@@ -134,8 +125,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Controla a opacidade/visibilidade das setas
-        // (fica levemente transparente no primeiro/último slide)
         btnAnterior.style.opacity = (slideAtual === 1) ? "0.3" : "1";
         btnAnterior.style.cursor = (slideAtual === 1) ? "default" : "pointer";
 
@@ -143,7 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
         btnProximo.style.cursor = (slideAtual === totalSlides) ? "default" : "pointer";
     }
 
-    // --- Funções dos botões ---
     function proximoSlide() {
         if (slideAtual < totalSlides) {
             updateCampanha(slideAtual + 1);
@@ -156,9 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // --- Adiciona os Event Listeners ---
-
-    // Setas
     if (btnProximo.addEventListener) {
         btnProximo.addEventListener("click", proximoSlide);
     }
@@ -166,15 +151,12 @@ document.addEventListener("DOMContentLoaded", function () {
         btnAnterior.addEventListener("click", anteriorSlide);
     }
 
-    // Bolinhas (Dots)
     dots.forEach(dot => {
         dot.addEventListener("click", () => {
-            // Pega o número do slide do atributo 'data-slide'
             const slideAlvo = Number(dot.dataset.slide);
             updateCampanha(slideAlvo);
         });
     });
 
-    // Inicia o carrossel no primeiro slide
     updateCampanha(1);
 });
