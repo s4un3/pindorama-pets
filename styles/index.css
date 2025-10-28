@@ -20,30 +20,30 @@ p {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     background-color: var(--azul-claro-1);
     font-family: Inter;
     color: var(--azul-escuro-1);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .txtSubtitle {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-style: bold;
 }
 
 .txtLight {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.312rem;
+    margin-bottom: 0.312rem;
 }
 
 .txtSection {
-    font-size: 24px;
+    font-size: 1.5rem;
     max-width: 90%;
     font-family: Poppins;
     font-style: bold;
@@ -51,7 +51,7 @@ body {
 }
 
 .txtSection-2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: Poppins;
     font-style: bold;
     cursor: default;
@@ -59,19 +59,19 @@ body {
 
 header {
     position: sticky;
-    top: 0px;
+    top: 0;
     box-sizing: border-box;
     z-index: 1;
 }
 
 #divHeader {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background-color: var(--quase-branco-1);
-    height: 80px;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 17px;
+    padding: 0 1.062rem;
 
 }
 
@@ -79,11 +79,11 @@ header {
     opacity: 0;
     width: 0;
     background-color: var(--quase-branco-1);
-    height: 0px;
+    height: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 17px;
+    padding: 0 1.062rem;
     overflow: hidden;
 }
 
@@ -93,17 +93,17 @@ header {
     flex-direction: row;
 
     .menuDesktopItem {
-        margin: 0 10px;
+        margin: 0 0.625rem;
         font-family: Poppins;
         font-weight: 400;
         font-style: Regular;
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 52.5rem) {
     #divHeaderDesktop {
-        height: 140px;
+        height: 8.75rem;
         opacity: 1;
         width: auto;
     }
@@ -113,15 +113,15 @@ header {
     }
 
     #divHeader {
-        margin-top: -5px;
+        margin-top: -0.312rem;
         height: 0;
         opacity: 0;
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 52.5rem) {
     .menuDesktopItem {
-        width: 0px;
+        width: 0;
     }
 }
 
@@ -134,9 +134,9 @@ header {
     color: var(--quase-branco-1);
     align-self: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.937rem;
     font-family: Poppins;
-    border-radius: 4.44px;
+    border-radius: 0.277rem;
     cursor: pointer;
     transition-duration: 0.25s;
 }
@@ -148,8 +148,8 @@ header {
 }
 
 .btnMenu {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #scrollPrincipal {
@@ -169,23 +169,23 @@ header {
 #bannerCentral {
     position: relative;
     align-self: center;
-    height: 200px;
-    width: 300px;
+    height: 12.5rem;
+    width: 18.75rem;
 }
 
 #btnContato {
-    width: 170px;
-    height: 40px;
+    width: 10.625rem;
+    height: 2.5rem;
     margin-bottom: 1.125rem;
 }
 
 #elipse1 {
     position: relative;
     width: auto;
-    height: 200px;
-    left: -35px;
+    height: 12.5rem;
+    left: -2.187rem;
     z-index: -1;
-    top: -20px;
+    top: -1.25rem;
     overflow: hidden;
     object-fit: cover;
 }
@@ -193,23 +193,23 @@ header {
 #pslogan {
     position: relative;
     text-align: justify;
-    top: -180px;
-    left: -35px;
-    font-size: 24px;
-    width: 220px;
+    top: -11.25rem;
+    left: -2.187rem;
+    font-size: 1.5rem;
+    width: 13.75rem;
 }
 
 #imgpets {
     position: relative;
     width: auto;
-    height: 100px;
-    top: -220px;
-    left: 25px;
+    height: 6.25rem;
+    top: -13.75rem;
+    left: 1.562rem;
     overflow: hidden;
     object-fit: cover;
 }
 
-@media(max-width: 410px) {
+@media(max-width: 25.625rem) {
     #bannerCentral {
         width: 90%;
     }
@@ -240,15 +240,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: min(600px, 90%);
+    width: min(37.5rem, 90%);
 
     .separador {
         width: 100%;
-        height: 2px;
+        height: 0.125rem;
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 31.25rem) {
     #avaliacoes {
         .separador {
             width: 0;
@@ -258,7 +258,7 @@ header {
 }
 
 #tituloAvaliacoes {
-    margin-top: 15px;
+    margin-top: 0.937rem;
 }
 
 #tituloAvaliacoes::after {
@@ -266,33 +266,33 @@ header {
 }
 
 .imgAvaliador {
-    width: 80px;
-    height: 80px;
-    margin: 0px 20px;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1.25rem;
 }
 
 .avaliacao {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0px;
+    margin: 0.625rem 0;
     width: 100%;
 }
 
 .innerAvaliacao {
     height: auto;
-    min-height: 100px;
+    min-height: 6.25rem;
 }
 
 .nomeAvaliador {
-    font-size: 13px;
+    font-size: 0.812rem;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .txtAvaliacao {
-    font-size: 11px;
+    font-size: 0.687rem;
     font-weight: 400;
     width: 80%;
 }
@@ -300,12 +300,12 @@ header {
 #botoesAvaliacao {
     display: flex;
     justify-content: space-between;
-    width: 150px;
+    width: 9.375rem;
     align-self: flex-end;
 }
 
 .btnAvaliacao {
-    width: 0px;
+    width: 0;
     cursor: pointer;
 }
 
@@ -314,22 +314,22 @@ header {
 }
 
 .btnAvaliacaoDesktop {
-    width: 40px;
+    width: 2.5rem;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 #btnAnteriorAvalDesktop {
     transform: scale(-1);
 }
 
-@media(max-width: 500px) {
+@media(max-width: 31.25rem) {
     .btnAvaliacaoDesktop {
-        width: 0px;
+        width: 0;
     }
 
     .btnAvaliacao {
-        width: 40px;
+        width: 2.5rem;
     }
 
     #botoesAvaliacao {
@@ -337,8 +337,8 @@ header {
     }
 
     .imgAvaliador {
-        height: 52px;
-        width: 52px;
+        height: 3.25rem;
+        width: 3.25rem;
     }
 
     #tituloAvaliacoes::after {
@@ -372,9 +372,9 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: var(--quase-branco-2);
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 
     form {
         width: 80%;
@@ -383,46 +383,46 @@ header {
             font-family: Inter;
             font-weight: 700;
             font-style: bold;
-            font-size: 13px;
-            margin-top: 25px;
-            margin-bottom: 5px;
+            font-size: 0.812rem;
+            margin-top: 1.562rem;
+            margin-bottom: 0.312rem;
         }
 
         input {
             width: 100%;
             box-sizing: border-box;
             align-self: center;
-            border-radius: 5px;
+            border-radius: 0.312rem;
             resize: none;
-            height: 40px;
-            border: 1.12px solid #00000066;
-            box-shadow: 0px 1.31px 1.31px 0px #00000026;
+            height: 2.5rem;
+            border: 0.07rem solid #00000066;
+            box-shadow: 0 0.081rem 0.081rem 0 #00000026;
         }
 
         textarea {
             width: 100%;
-            border-radius: 5px;
+            border-radius: 0.312rem;
             resize: none;
-            height: 80px;
-            border: 1.12px solid #00000066;
-            box-shadow: 0px 1.31px 1.31px 0px #00000026;
+            height: 5rem;
+            border: 0.07rem solid #00000066;
+            box-shadow: 0 0.081rem 0.081rem 0 #00000026;
         }
     }
 }
 
 #btnEnviarForm {
-    width: 150px;
-    height: 55px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 9.375rem;
+    height: 3.437rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     font-family: Poppins;
     font-weight: 700;
     font-style: Bold;
-    font-size: 20.47px;
-    border-radius: 8px;
+    font-size: 1.279rem;
+    border-radius: 0.5rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
     #divContato {
         background-color: var(--azul-claro-1);
     }
@@ -430,7 +430,7 @@ header {
     #tituloContato {
         width: 60%;
         text-align: left;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     #contatoContainer {
@@ -438,9 +438,9 @@ header {
         justify-content: center;
         align-items: stretch;
         width: 60%;
-        border: solid rgba(0, 0, 0, 0.205) 1px;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px #00000015;
+        border: solid rgba(0, 0, 0, 0.205) 0.062rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0.125rem 0.312rem #00000015;
     }
 
     #contatoInfo {
@@ -448,27 +448,27 @@ header {
         flex-direction: column;
         justify-content: flex-start;
         background-color: var(--quase-branco-1);
-        padding: 25px;
+        padding: 1.562rem;
         flex: 1;
-        border-right: solid rgba(0, 0, 0, 0.205) 1px;
-        border-radius: 4px 0px 0px 4px;
+        border-right: solid rgba(0, 0, 0, 0.205) 0.062rem;
+        border-radius: 0.25rem 0 0 0.25rem;
     }
 
     #contatoInfo h3 {
         font-family: Inter;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--azul-1100);
     }
 
     #contatoInfo .loc {
         font-family: Inter;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--azul-1100);
         font-style: italic;
-        padding-top: 40px;
-        padding-bottom: 70px;
+        padding-top: 2.5rem;
+        padding-bottom: 4.375rem;
     }
 
     #contatoInfo img {
@@ -476,27 +476,27 @@ header {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 4px;
-        padding-bottom: 46px;
+        border-radius: 0.25rem;
+        padding-bottom: 2.875rem;
     }
 
     #contatoRedes {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 0.375rem;
     }
 
     #contatoRedes p {
         font-family: Inter;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
 
         img {
-            width: 36px;
-            height: 36px;
+            width: 2.25rem;
+            height: 2.25rem;
             margin: 0;
             padding: 0;
         }
@@ -504,28 +504,28 @@ header {
 
     #formContato {
         flex: 1;
-        padding: 35px 40px;
+        padding: 2.187rem 2.5rem;
         box-sizing: border-box;
         background-color: var(--quase-branco-2);
-        border-radius: 0px 4px 4px 0px;
+        border-radius: 0 0.25rem 0.25rem 0;
 
         .inputCtt {
-            height: 50px;
+            height: 3.125rem;
         }
 
         .textareaCtt {
-            height: 120px;
+            height: 7.5rem;
         }
     }
 
     #formContato p {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     #btnEnviarForm {
-        width: 144px;
+        width: 9rem;
         margin-bottom: 0;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     #icones {
@@ -539,26 +539,26 @@ footer {
 }
 
 #divFooterPindorama {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     background-color: white;
     height: auto;
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 #footerServicos {
-    margin-right: 5px;
+    margin-right: 0.312rem;
 }
 
 #footerInstitucional {
-    margin-left: 5px;
+    margin-left: 0.312rem;
 }
 
 #divFooterUnect {
     background-color: var(--azul-escuro-1);
-    height: 80px;
-    font-size: 12px;
+    height: 5rem;
+    font-size: 0.75rem;
     color: var(--azul-claro-1);
     align-content: center;
     text-align: center;
@@ -574,7 +574,7 @@ footer {
 #quemSomos {
     width: 100%;
     height: auto;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     background-color: var(--azul-400);
 
     display: flex;
@@ -589,7 +589,7 @@ footer {
 
 .txtSmall {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.937rem;
     cursor: default;
     width: 100%;
 }
@@ -605,7 +605,7 @@ footer {
     width: 100%;
     height: auto;
     background-color: var(--azul-600);
-    padding: 20px 0;
+    padding: 1.25rem 0;
 
     display: flex;
     flex-direction: column;
@@ -627,7 +627,7 @@ footer {
 .btnAgendar {
     width: 13rem;
     height: 2.4rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -636,14 +636,14 @@ footer {
     color: var(--azul-escuro-1);
     align-self: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.937rem;
     font-family: Poppins;
-    border-radius: 4.44px;
+    border-radius: 0.277rem;
     cursor: pointer;
     transition-duration: 0.25s;
 }
 
-@media(max-width: 245px) {
+@media(max-width: 15.312rem) {
     .btnAgendar {
         width: 80%;
     }
@@ -670,13 +670,13 @@ footer {
 }
 
 #headerProfissionais {
-    margin: 20px;
+    margin: 1.25rem;
     background-color: var(--azul-claro-1);
 }
 
 #headerProfissionaisDesktop {
-    margin: 20px;
-    margin-left: 60px;
+    margin: 1.25rem;
+    margin-left: 3.75rem;
     opacity: 0;
     height: 0;
 }
@@ -689,7 +689,7 @@ footer {
     align-items: start;
 }
 
-@media(max-width: 375px) {
+@media(max-width: 23.437rem) {
     .sectionProfissionais {
         padding-top: 1rem;
         height: 100%;
@@ -700,7 +700,7 @@ footer {
     }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 50rem) {
     .sectionProfissionais {
         display: flex;
         flex-direction: row;
@@ -712,9 +712,9 @@ footer {
     }
 
     #profissionais {
-        max-width: 1180px;
-        box-shadow: 0px 2px 4px 0px #00000040;
-        border-radius: 8px;
+        max-width: 73.75rem;
+        box-shadow: 0 0.125rem 0.25rem 0 #00000040;
+        border-radius: 0.5rem;
     }
 
     #headerProfissionaisDesktop {
@@ -729,8 +729,8 @@ footer {
 }
 
 .cardProfissional {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 
     img {
         display: block;
@@ -756,18 +756,18 @@ footer {
 }
 
 #icones {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     display: flex;
     justify-content: space-between;
     width: 60%;
 }
 
 #logo-footer-desktop {
-    height: 150px;
+    height: 9.375rem;
     width: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     #logo-footer-desktop {
         width: 0;
     }
@@ -779,13 +779,13 @@ footer {
 }
 
 .imgfootercontato {
-    margin-right: 10px;
-    width: 36px;
+    margin-right: 0.625rem;
+    width: 2.25rem;
 }
 
-@media(min-width: 650px) {
+@media(min-width: 40.625rem) {
     .iconesmobile {
-        width: 0px;
+        width: 0;
     }
 
 }
@@ -802,7 +802,7 @@ footer {
     padding-bottom: 1.25rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
     #logo-quemSomos-desktop {
         width: 0;
         height: 0;
@@ -810,7 +810,7 @@ footer {
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 40.625rem) {
     #logo-quemSomos-mobile {
         width: 0;
         height: 0;
@@ -818,7 +818,7 @@ footer {
     }
 
     #logo-quemSomos-desktop {
-        width: 250px;
+        width: 15.625rem;
     }
 
     #inner-quemSomos {
@@ -854,11 +854,11 @@ footer {
     .txtSection {
         align-self: flex-start;
         margin-left: 25%;
-        margin-top: 25px;
+        margin-top: 1.562rem;
     }
 
     img {
-        margin: 20px;
+        margin: 1.25rem;
     }
 }
 
@@ -871,7 +871,7 @@ footer {
 }
 
 #img-servicos-desktop {
-    width: 200px;
+    width: 12.5rem;
     object-fit: cover;
 }
 
@@ -879,15 +879,16 @@ footer {
     width: 30%;
     margin: 0;
     text-align: justify;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
     #servicos-desktop {
         height: 0;
         opacity: 0;
     }
 }
+
 #abaixo-servicos {
     background-color: var(--azul-400);
     width: 100%;
@@ -907,17 +908,17 @@ footer {
             width: 40%;
             margin-left: 25%;
             text-align: justify;
-            margin: 10px;
+            margin: 0.625rem;
         }
     }
 }
 
 #medicina-veterinaria {
-    width: 200px;
-    margin: 10px;
+    width: 12.5rem;
+    margin: 0.625rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
     #abaixo-servicos {
         height: 0;
         width: 0;
@@ -925,7 +926,7 @@ footer {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
     #bannerCentral {
         height: 0;
         opacity: 0;
@@ -940,36 +941,36 @@ footer {
 
 #banner-desktop {
     background-color: var(--quase-branco-1);
-    box-shadow: 0px 2px 4px 0px #00000026;
-    height: 200px;
-    width: 450px;
-    padding: 20px;
-    margin-bottom: 20px;
+    box-shadow: 0 0.125rem 0.25rem 0 #00000026;
+    height: 12.5rem;
+    width: 28.125rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
     overflow: hidden;
 }
 
 #pets-desktop {
-    width: 260px;
+    width: 16.25rem;
     position: relative;
-    left: 130px;
-    top: 20px;
+    left: 8.125rem;
+    top: 1.25rem;
 }
 
 #waveform {
-    width: 200px;
+    width: 12.5rem;
     position: relative;
-    top: -220px;
-    left: 300px;
+    top: -13.75rem;
+    left: 18.75rem;
     z-index: 0;
 }
 
 #btnContato-desktop {
-    width: 150px;
+    width: 9.375rem;
     position: relative;
-    top: -80px;
+    top: -5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     #banner-desktop {
         height: 0;
         width: 0;
@@ -981,24 +982,24 @@ footer {
     display: none;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 50.062rem) {
     #campanhas-desktop {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 20px 0;
-        margin-bottom: 20px;
+        padding: 1.25rem 0;
+        margin-bottom: 1.25rem;
         background-color: var(--azul-claro-1);
         position: relative;
         box-sizing: border-box;
     }
 
     .seta-campanha {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
         cursor: pointer;
-        margin: 0 20px;
+        margin: 0 1.25rem;
         z-index: 2;
         transition: transform 0.2s;
     }
@@ -1010,11 +1011,11 @@ footer {
     #slides-container {
         position: relative;
         width: 80%;
-        max-width: 900px;
-        height: 220px;
+        max-width: 56.25rem;
+        height: 13.75rem;
         overflow: hidden;
-        border-radius: 12px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0.75rem;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
     }
 
     .slide-campanha {
@@ -1040,48 +1041,48 @@ footer {
     }
 
     .slide-conteudo {
-        max-width: 400px;
-        margin-left: 60px;
+        max-width: 25rem;
+        margin-left: 3.75rem;
         color: var(--azul-escuro-1);
     }
 
     .conteudoUm {
-        margin-left: 350px;
+        margin-left: 21.875rem;
     }
 
     .slide-conteudo-1 h3 {
         font-family: 'Poppins', sans-serif;
-        font-size: 26px;
+        font-size: 1.625rem;
         font-weight: 700;
         margin: 0;
-        padding-bottom: 12px;
+        padding-bottom: 0.75rem;
     }
 
     .slide-conteudo-1 p {
         font-family: 'Inter', sans-serif;
-        font-size: 15px;
+        font-size: 0.937rem;
         font-weight: 400;
-        padding-bottom: 51px;
+        padding-bottom: 3.187rem;
     }
 
     .slide-conteudo h3 {
         font-family: 'Poppins', sans-serif;
-        font-size: 26px;
+        font-size: 1.625rem;
         font-weight: 700;
         margin: 0;
     }
 
     .slide-conteudo p {
         font-family: 'Inter', sans-serif;
-        font-size: 15px;
+        font-size: 0.937rem;
         font-weight: 400;
-        margin: 10px 0 20px 0;
+        margin: 0.625rem 0 1.25rem 0;
     }
 
     .btn-slide {
-        width: 185px;
-        height: 45px;
-        font-size: 15px;
+        width: 11.562rem;
+        height: 2.812rem;
+        font-size: 0.937rem;
     }
 
     .btn-slide-claro-1 {
@@ -1132,7 +1133,7 @@ footer {
 
     #dots-campanha {
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -1140,12 +1141,12 @@ footer {
     }
 
     .dot-campanha {
-        width: 10px;
-        height: 10px;
+        width: 0.625rem;
+        height: 0.625rem;
         border-radius: 50%;
         background-color: #A3A3A3;
         opacity: 0.7;
-        margin: 0 5px;
+        margin: 0 0.312rem;
         cursor: pointer;
         transition: all 0.3s;
     }
